@@ -1,5 +1,9 @@
 <?php
-  require 'header/header.php';
+  require 'view/header/header.php';
+  include 'model/conexion.php';
+
+  $db = new Database();
+  $db->connect();
 ?>
   
     <div class="min-h-screen flex items-center justify-center">
@@ -30,5 +34,5 @@
 
 
  <?php
-  require 'footer/footer.php';
+  require 'view/footer/footer.php';
 ?>
